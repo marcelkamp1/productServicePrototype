@@ -14,12 +14,12 @@
         >
           Documentation
         </a>
-        <a
+        <NuxtLink
           href="./dashboard"
           class="button--grey"
         >
           Dashboard
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </div>

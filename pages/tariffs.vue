@@ -3,23 +3,23 @@
     <div id="navigation" class="leftX">
       <ul>
         <li>
-          <a href="./dashboard">
+          <NuxtLink to="./dashboard">
             <img src="~/assets/images/dashboard.png" class="icon"></img>
             Dashboard
-          </a>
+          </NuxtLink>
         </li>
         <p>Marketing Variants</p>
         <li>
-          <a href="./tariffs">
+          <NuxtLink to="./tariffs">
             <img src="~/assets/images/steuerfrei.png" class="icon"></img>
             Tarife
-          </a>
+          </NuxtLink>
         </li>
         <li>
-          <a href="#">
+          <NuxtLink to="#">
             <img src="~/assets/images/server.png" class="icon"></img>
             Hardware
-          </a>
+          </NuxtLink>
         </li>
       </ul>
     </div>
