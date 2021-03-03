@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer class="footer">
+    <footer class="footer" id='footer'>
       <p>© 2020</p>
     </footer>
   </div>

@@ -45,6 +45,20 @@ html {
   background-color: #3b8070;
 }
 
+.button--magenta {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #ea0a8e;
+  color: #ea0a8e;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button--magenta:hover {
+  color: #fff;
+  background-color: #ea0a8e;
+}
+
 .button--grey {
   display: inline-block;
   border-radius: 4px;

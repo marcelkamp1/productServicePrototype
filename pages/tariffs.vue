@@ -66,10 +66,9 @@ export default {
       posts: []
     }
   },
-  async fetch () {
-    this.posts = await fetch(
-      'https://jsonplaceholder.typicode.com/posts'
-    ).then(res => res.json())
+  async getPosts ({ $axios, params }) {
+    const posts = await $axios.$get(
+      `https://jsonplaceholder.typicode.com/posts/${params.id}`)
   },
   methods: {
     openRouting () {

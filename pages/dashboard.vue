@@ -30,7 +30,11 @@
         <img src="~/assets/images/hamburger.png" @click="openRouting"></img>
         <h1>Dashboard</h1>
       </nav>
-      <Logo />
+      <section class="dashboardButtons">
+        <Telekom class="logo" />
+        <a href="./tariffs" class="button--magenta">Tarife</a>
+        <a href="./#" class="button--magenta">Hardware</a>
+      </section>
     </div>
     <Footer />
   </div>
@@ -43,9 +47,11 @@ export default {
       if (document.getElementById('content').style.transform === 'translateX(250px)') {
         document.getElementById('content').style.transform = 'translateX(0px)'
         document.getElementById('navigation').style.transform = 'translateX(-250px)'
+        document.getElementById('footer').style.width = '100%'
       } else {
         document.getElementById('content').style.transform = 'translateX(250px)'
         document.getElementById('navigation').style.transform = 'translateX(0px)'
+        document.getElementById('footer').style.width = '128%'
       }
     }
   }
@@ -54,6 +60,6 @@ export default {
 
 <style>
   .container {
-    min-height: 89vh;
+    min-height: 90vh;
   }
 </style>
